@@ -1,0 +1,69 @@
+Output is in cm
+with a moment of 1e25 dyne-cm
+although this is just a guess
+
+####################
+1) COMPILACION
+####################
+
+ejecutar en consola:
+
+> make clean all
+
+#####################
+2) INPUTS PROGRAMA
+#####################
+
+editar el archivo inputs_tarea.txt. El archivo contiene los siguientes campos
+
+Linea 1: Modelo de velocidad  (default none)
+Linea 2: nptos, dt
+Linea 3: strike, dip, rake
+Linea 4: freq baja, freq alta (filtro pasa-banda)
+Linea 5: Momento sismico (dyn.cm), rise time (segundos)
+Linea 6-n: Azimuth, epi.dist, station   
+
+
+El modelo de velocidad es un archivo con el siguiente formato: 
+
+J-B model
+1.0 4.0 3 5.57 3.36 2.65 15.0
+          6.50 3.74 2.87 18.0
+          8.10 4.68 3.30 0.0
+        3 5.57 3.36 2.65 15.0
+          6.50 3.74 2.87 18.0
+          8.10 4.68 3.30 0.0
+        1 6.50 3.74 2.87 0.0
+
+Explanation:
+ID
+TQP, TQS, NL ,(VP (L),VS (L),DEN (L),DEP (L),L=1,NL )
+          NL1,(VP1(L),VS1(L),DEN1(L),DEP1(L),L=1,NL1)
+          NL2,(VP2(L),VS2(L),DEN2(L),DEP2(L),L=1,NL2)
+
+Line 1: Title
+Line 2: t* for P, t* for S, and “source” structure
+     Vp,Vs= velocity [km/s]; den = density [e3 kg/m**3];
+     Dep = thickness [km]
+Line 3: “Receiver” structure
+Line 4: “PP bounce point” structure
+
+
+####################
+2  RUN #########
+####################
+
+el programa se corre con la instruccion
+> ./teleseis3_2
+
+para graficar resultados se usan los script python
+
+> python plot0_np.py
+> python plot01_np.py
+
+
+NO OLVIDE MODIFICAR LOS VALORES AZI y EP.DIST DE LAS ESTACIONES CON LOS VALORES REALES. 
+
+
+
+

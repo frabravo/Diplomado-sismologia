@@ -1,0 +1,12 @@
+# Ejecutables
+teleseis3_2
+
+# Archivos objeto
+*.o
+*.mod
+
+src/*.o
+
+# Archivos temporales
+*~
+core

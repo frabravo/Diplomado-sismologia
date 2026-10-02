@@ -1,0 +1,32 @@
+
+FC=gfortran 
+SRCS=getgeomnew.f \
+	sub.bodyw3.f \
+	sub.cfft.f \
+	sub.clear.f \
+	sub.cnvr.f \
+	sub.cnvrsh.f \
+	sub.instg.f \
+	sub.prod.f \
+	sub.qf.f \
+	sub.radp3.f \
+	sub.refl.f \
+	sub.reflsh.f \
+	sub.stf_add.f \
+	sub.fourt.f  \
+        sub.bpfilter.f 
+OBJS=${SRCS:%.f=%.o} sacio.o
+LIBS= -L/usr/X11R6/lib -L/opt/sac-101.3b/lib
+FFLAGS = -C -O -g -w
+
+
+teleseis3: $(OBJS) teleseis3.f
+	$(FC) $(FFLAGS) -o teleseis3 teleseis3.f $(OBJS) $(LIBS)
+
+teleseis3_2: $(OBJS) teleseis3_2.f
+	$(FC) $(FFLAGS) -o teleseis3_2 teleseis3_2.f $(OBJS) $(LIBS)
+
+all:	teleseis3 teleseis3_2
+
+clean:
+	\rm -f teleseis3 teleseis3_2 $(OBJS) *~ core
