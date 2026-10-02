@@ -224,10 +224,10 @@ c	          call wsac0(outfile,w,w,nerr)
 
                   do m = 1, nt
                      w(m) = w(m)*M0
+                     w(m) = w(m)/100. !originalmente en cm. Convert to m
                   enddo
                    
 c                  call wrtsac1(outfile,dt,nt,tstart,dist,az,xstart,w)
-
 
                   !outfile =trim(outfile)//'.out'//char(0)
                   !print *,'outfile',outfile
