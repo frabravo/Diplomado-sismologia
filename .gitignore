@@ -10,3 +10,15 @@ src/*.o
 # Archivos temporales
 *~
 core
+
+
+# Los de la tarea no utilizado
+Tarea_2026/*.py
+Tarea_2026/*.[12]
+Tarea_2026/*.param
+Tarea_2026/*.fsp
+Tarea_2026/tarea2_solucion.ipynb
+Tarea_2026/procesamiento
+Tarea_2026/*.proc
+Tarea_2026/vmodel*
+Tarea_2026/AK135_165km
