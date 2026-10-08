@@ -1,5 +1,3 @@
-https://mybinder.org/v2/gh/frabravo/Diplomado-sismologia/HEAD
-
 Output is in m
 with a moment of 1e25 dyne-cm
 although this is just a guess
@@ -20,7 +18,7 @@ editar el archivo inputs_tarea.txt. El archivo contiene los siguientes campos
 
 Linea 1: Modelo de velocidad  (default none)
 Linea 2: nptos, dt
-Linea 3: strike, dip, rake
+Linea 3: profundidad, strike, dip, rake
 Linea 4: freq baja, freq alta (filtro pasa-banda)
 Linea 5: Momento sismico (dyn.cm), rise time (segundos)
 Linea 6-n: Azimuth, epi.dist, station   
@@ -62,9 +60,8 @@ para graficar resultados se usan los script python
 
 > python plot0_np.py
 > python plot01_np.py
+> python plot02_np.py
 
-
-NO OLVIDE MODIFICAR LOS VALORES AZI y EP.DIST DE LAS ESTACIONES CON LOS VALORES REALES. 
 
 
 
