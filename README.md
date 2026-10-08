@@ -31,9 +31,10 @@ En el directorio /Tarea_2026 se encuentra el material disponible para realizar l
 Las actividades deber realizarse en el notebook `tarea_diplomado.ipynb`. Si no cuenta con los requisitos necesarios en
 su computador para ejecutar los códigos, puede trabajar sobre una máquina virtual accesible mediante el siguinte link
 
-https://mybinder.org/v2/gh/frabravo/Diplomado-sismologia/HEAD?labpath=Tarea_2026/tarea_diplomado.ipynb
+https://mybinder.org/v2/gh/frabravo/Diplomado-sismologia/curso-2026-v1
+https://mybinder.org/v2/gh/frabravo/Diplomado-sismologia/curso-2026-v1?labpath=Tarea_2026/tarea_diplomado.ipynb
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/frabravo/Diplomado-sismologia/HEAD?labpath=Tarea_2026/tarea_diplomado.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/frabravo/Diplomado-sismologia/curso-2026-v1?labpath=Tarea_2026/tarea_diplomado.ipynb)
 
 Considere que una vez cerrada la sesión virtual, los archivos que modificó desaparecen. Por lo que debe descagar el
 archivo `tarea_diplomado.ipynb` para su entrega.
