@@ -11,6 +11,8 @@ src/*.o
 *~
 core
 
+# ejemplos
+*.[012]
 
 # Los de la tarea no utilizado
 Tarea_2026/*.py
